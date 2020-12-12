@@ -1,0 +1,9 @@
+<h1>Album</h1>
+<li>
+    <%= @album.name %>
+    <a href='<%= edit_album_url(@album) %>'>Edit Album</a>
+    <form action='<%= album_url(@album.id) %>' method='post'>
+        <input type='hidden' name='_method' value='delete'>
+        <button>Delete</button>
+    </form>
+</li>

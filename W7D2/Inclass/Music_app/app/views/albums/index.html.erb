@@ -1,0 +1,11 @@
+<h1>All the Album!!!</h1>
+<ul>
+    <% @albums.each do |album| %>
+    <li>
+        <%= album.name %>
+        <a href='<%= album_url(album.id) %>'>Show album</a>
+    </li>
+    <% end %>
+</ul>
+
+<a href='<%= new_album_url  %>'>Create new Album</a>
