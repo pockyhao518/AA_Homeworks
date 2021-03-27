@@ -6,8 +6,6 @@ import { receiveTodos, receiveTodo } from './actions/todo_actions';
 import allTodos from './reducers/selectors';
 
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     // remove the window.store later, only good for testing during development
     window.store = configureStore;
